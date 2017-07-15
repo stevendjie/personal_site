@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Projects | Steven's Personal Website & Blogs</title>
+		<link rel="stylesheet" href="client/stylesheets/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+	</head>
+	<body>
+		
+		<header class="primary-header container clearfix">
+			<h1 class="logo"><a href="index.html">Steven's <br/> Personal Website <br> & Blogs</h1>
+			<div class="nav-bar">
+			<a href="about_me.html">
+				<h3 class="title">The Chronicles of My Life</h3>
+			</a>
+			<nav class="nav primary-nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about_me.html">About Me</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="stories.html">Stories</a></li>
+					<li><a href="contact.php">Contact</a></li>
+				</ul>
+			</nav>
+			</div>
+		</header>
+
+		<section class="row-alt">
+			<div class="lead container">
+
+				<h1>Projects</h1>
+				
+				<p class="quote">"I've always enjoyed <strong>creating</strong>."</p>
+
+			</div>
+		</section>
+
+		<section class="row">
+			<div class="grid">
+				<section class="content">
+					<div class="col-2-3" style="width:100%;">
+						<div class="panel-header" >
+							<h2>Software</h2>
+							<button type="button">Show</button>
+						</div>
+						<div class="panel">
+							<div id="manual-slider">
+								<ul class="slides">
+									<li class="slide"><img src="client/images/personal_site.jpg" /></li>
+									<li class="slide"><img src="client/images/php_code.jpg" /></li>
+									<li class="slide"><img src="client/images/robot.jpg" /></li>
+									<li class="slide"><img src="client/images/javascript_code.jpg" /></li>
+									<li class="slide"><img src="client/images/lyriclogger.jpg" /></li>
+								</ul>
+							</div>
+							<div class="button-container">
+								<button id="button-prev">Prev</button>
+								<button id="button-next">Next</button>
+							</div>
+							<br /> 
+							<p>
+								<ol>
+									<li><h3>1. <strong>Personal Website & Blogs</strong> (You're looking at it right now!!) : </h3>
+
+										<p>The idea for this project was simple. I wanted to make a personal website <em>unlike</em> other CS,SE,ECE, etc. students in UW. I wanted to make one that was <strong>actually</strong> personal. The purpose of this website is to show-case the real me outside of my career and my academics. I wanted to show people what I love to do after working/studying.</p>
+
+										<p>This site is created using HTML, CSS, JavaScript <strong style="color: red;">from scratch</strong>. I used <strong style="color: maroon;">no frameworks or libraries</strong> (with the exception of jQuery) for this site <strong style="color:green;">on purpose</strong>, to attain a better understanding of front-end development.</p>
+
+										<p>Overall, I am pretty proud of this project because I ended up growing my knowledge of front-end development as well as a little bit of back-end development.</p>
+
+										<ul>Technologies I used: <br>
+											<li>HTML5 - content</li>
+											<li>CSS3 - styling</li>
+											<li>JavaScript & jQuery - interactivity and client-side input validation</li>
+											<li>PHP - form validation, processing, mailing features</li>
+											<li>XAMPP - Apache local server</li>
+										</ul><br />
+										<ul>Main obstacles I faced: <br>
+											<li>Writing and debugging JS and using jQuery whilst still being fairly new to them.</li>
+											<li>Learning server-side development with PHP.</li>
+											<li>WAMP server not starting and major difficulties configuring SendMail (SMTP) (for sending e-mails through forms).</li>
+										</ul>
+									</li><br>
+									<li><h3>2. WIPEOUT! Automated Runway Sweeper:</h3>
+
+										<p>This project, I'd have to admit, was a group project for a course. Before transferring into Computer Science, I was in Mechatronics Engineering. This robotics project was for my introductory programming course GENE121 in 1A.</p>
+
+										<p>What this robot does is that it sweeps debris off of a miniature model of an airport runway. It features a <strong style="color:dark blue;">line-following algorithm</strong> that made use of simple programming concepts (think loops and if-statements). Intuitively, using basic (like basic basic) CS concepts, a line-following algorithm would probably feature a loop, where if the sensor sees white (a boolean value), then continue, and if the sensor sees black, then turn left/right to correct the robot's path. This algorithm turned out to be inefficient and inaccurate as the robot will end up zig-zagging. Instead, the line-following algorithm goes something like this: <span style="color:#648880;"> 1. I am going to make the light sensor see the <em>edge</em> of the line where it is 50% black and 50% white. 2.If I see more black than white, I will make a correction left or right based on how much more black I've seen. 3. I'll do the same if I see more white. </span> This way, the robot will not zig-zag and will follow the line more accurately.</p>
+
+										<ul>Technologies I used: <br>
+											<li>RobotC - C/C++ based robot programming language for NXT and VEX robotics</li>
+											<li>[Hardware] NXT light sensors, motors, encoders, and a programmable brick microcomputer </li>
+										</ul><br>
+										
+										<iframe style="margin:auto;" width="560" height="315" src="https://www.youtube.com/embed/181WQNJ7tOw" frameborder="0" allowfullscreen></iframe>
+										
+									</li><br>
+									<li>
+										<h3>3. Lyric Logger, Online To-Do List [lightweight]:</h3>
+
+									</li>
+								</ol>
+							</p>
+						</div>
+						<div class="panel-header">
+							<h2>Music</h2>
+							<button type="button">Show</button>
+						</div>
+						<div class="panel" >
+							<p>Some Paragraph #2</p>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+
+		<footer class="primary-footer container clearfix">
+
+			<span>&copy Steven Djie &nbsp</span>
+
+			<nav class="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about_me.html">About Me</a></li>
+					<li><a href="tunes.html">Tunes</a></li>
+					<li><a href="stories.html">Stories</a></li>
+					<li><a href="contact.php">Contact</a></li>
+				</ul>
+			</nav>
+
+
+		</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="client/scripts/main.js"></script>
+	</body>
+</html>
