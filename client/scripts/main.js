@@ -17,7 +17,7 @@ function getCaptcha(){
 	//insert a new captcha as first child
 	$("#captcha").prepend("<label id='code'>" + captcha_code + "</label>");
 
-	console.log(captcha_code);
+	
 }
 
 $(function() {
@@ -41,9 +41,9 @@ $(function() {
 		interval = setInterval(function() {
 			//animate margin-left
 			if (currSlide !== $slides.length - 1){
-			$slideContainer.animate({'margin-left':'-='+width}, animationSpeed, function(){			
-				currSlide++;
-			});
+				$slideContainer.animate({'margin-left':'-='+width}, animationSpeed, function(){			
+					currSlide++;
+				});
 			} else {
 				currSlide = 0;
 				$slideContainer.css('margin-left', 0);
@@ -134,7 +134,7 @@ $(function() {
 	//contact form
 	getCaptcha();//when the page first loads
 
-	$('#contact-form').submit(function() {
+	/*$('#submit').click(function() {
 		//configuration of error messages
 		var captcha_error = "Wrong captcha. Try again."
 		var email_error = "Invalid email. Try again."
@@ -187,8 +187,13 @@ $(function() {
 			"color":"#b9353f", "font-weight":"bold"});
 			errors_queue.push(captcha_error);
 		}
+		if (!(captcha_value == captcha_submitted) || !(email_pattern.test(email_text))
+		 || !(name_pattern.test(name_text)) || ($message.val().length < 2)){
+			alert(errors_queue.shift());//dequeue
+			return false;
+		}
 
-
+/*
 		
 		if ((captcha_value == captcha_submitted) && (email_pattern.test(email_text))
 		 && (name_pattern.test(name_text)) && ($message.val().length >= 2)){
@@ -203,7 +208,7 @@ $(function() {
       	return false;
 		
 
-	});
+	});*/
 
 
 

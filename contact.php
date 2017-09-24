@@ -1,6 +1,6 @@
 <?php
 
-include('/php/form_process.php');
+include('php/form_process.php');
 
 ?>
 <html lang="en">
@@ -35,7 +35,7 @@ include('/php/form_process.php');
 		<section class="row-alt">
 			<div class="lead container">
 
-				<h1>Send me an e-mail!</h1>
+				<h1>Send me an e-mail below!</h1><p class="quote"> (or directly to <strong>sadjie@edu.uwaterloo.ca</strong>)</p>
 
 			</div>
 		</section>
@@ -45,7 +45,8 @@ include('/php/form_process.php');
 				<section class="content">
 					<div class="col-2-3" style="width:100%;">
 						<div id="form">
-							<form action="<?= $_SERVER['PHP_SELF']; ?>" id="contact-form" method="post" autocomplete="off">
+							<!--<form action="<?= $_SERVER['PHP_SELF']; ?>" id="contact-form" method="post" autocomplete="off">-->
+							<form  action="https://script.google.com/macros/s/AKfycbz41SxTUelQElVUZV1ZN3nP5tJmPKCwRiW3mLAdaTCay8vJ0bw/exec" id="contact-form" method="post" autocomplete="off">
 								<div class="align-right">
 									<span style="color: red;">*&nbsp;</span><strong>required field</strong>
 								</div>
@@ -65,6 +66,9 @@ include('/php/form_process.php');
 								<input type="submit" class="submit" name="submit" value="Send e-mail" tabIndex=5>
 
 							</form>
+							<div style="display:none;" id="thankyou_message">
+								<h2>Message sent! Thanks for contacting me!</h2>
+							</div>
 						</div>
 					</div>
 				</section>
@@ -73,7 +77,7 @@ include('/php/form_process.php');
 
 		<footer class="primary-footer container clearfix">
 
-			<span>&copy Steven Djie &nbsp</span>
+			<span>&copy Steven Djie &nbsp;</span>
 
 			<nav class="nav">
 				<ul>
@@ -90,5 +94,7 @@ include('/php/form_process.php');
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="client/scripts/main.js"></script>
+	<script data-cfasync="false" type="text/javascript"
+src="client/scripts/form_process.js"></script>
 	</body>
 </html>

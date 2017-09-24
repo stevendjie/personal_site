@@ -140,7 +140,7 @@ body{
 	font: 300 16px "Cinzel", serif;/*300 is font weight*/
 	background-color: #293f50;
 }
-a:visited, a, .primary-header a:hover, .panel-header button:hover, .button-container button:hover, .primary-footer a:hover{
+ a, .primary-header a:hover, .panel-header button:hover, .button-container button:hover, .primary-footer a:hover{
 	text-decoration: none;
 	color: #648880;
 }
@@ -225,12 +225,13 @@ p a{
 	text-transform: uppercase;
 	color: #fff;
 	cursor: pointer;
-	font-weight: 400;
+	font-weight: 400;a
 }
 .btn-alt:hover{
 	background: white;
 	color: #648880;
 }
+
 .row{
 	background: white;
 	min-width: 960px;
